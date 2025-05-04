@@ -16,8 +16,8 @@
         
         body {
             overflow: hidden;
-            background-color: #000;
-            color: #fff;
+            background-color: #0a0b1a;
+            color: #f0f0ff;
         }
         
         canvas {
@@ -45,7 +45,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+            background: radial-gradient(ellipse at center, rgba(10,11,26,0) 0%, rgba(10,11,26,0.8) 100%);
             z-index: 0;
         }
         
@@ -60,14 +60,16 @@
             align-items: center;
             z-index: 10;
             pointer-events: all;
+            border-bottom: 1px solid rgba(0, 255, 169, 0.2);
+            background: linear-gradient(180deg, rgba(10,11,26,0.8) 0%, rgba(10,11,26,0) 100%);
         }
         
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
             letter-spacing: 2px;
-            color: #fff;
-            text-shadow: 0 0 10px rgba(255,255,255,0.5);
+            color: #00ffa9;
+            text-shadow: 0 0 10px rgba(0, 255, 169, 0.7);
         }
         
         .nav-links {
@@ -76,18 +78,22 @@
         }
         
         .nav-link {
-            color: #fff;
+            color: #f0f0ff;
             text-decoration: none;
             font-weight: 500;
             transition: all 0.3s ease;
             cursor: pointer;
             padding: 0.5rem 1rem;
             border-radius: 4px;
-            text-shadow: 0 0 10px rgba(255,255,255,0.3);
+            text-shadow: 0 0 10px rgba(240, 240, 255, 0.3);
+            border: 1px solid transparent;
         }
         
         .nav-link:hover {
-            background-color: rgba(255,255,255,0.1);
+            background-color: rgba(255, 0, 130, 0.1);
+            border: 1px solid rgba(255, 0, 130, 0.3);
+            color: #ff0082;
+            text-shadow: 0 0 10px rgba(255, 0, 130, 0.7);
         }
         
         .main-content {
@@ -109,20 +115,21 @@
             font-size: 4rem;
             font-weight: 700;
             margin-bottom: 1rem;
-            color: #fff;
-            text-shadow: 0 0 20px rgba(255,255,255,0.5);
+            color: #00ffa9;
+            text-shadow: 0 0 20px rgba(0, 255, 169, 0.7);
         }
         
         .tagline {
             font-size: 1.5rem;
             font-weight: 300;
             margin-bottom: 2rem;
-            color: #ccc;
+            color: #ff0082;
+            text-shadow: 0 0 10px rgba(255, 0, 130, 0.5);
         }
         
         .cta-button {
-            background-color: #fff;
-            color: #000;
+            background-color: rgba(0, 255, 169, 0.1);
+            color: #00ffa9;
             padding: 0.8rem 2rem;
             border-radius: 30px;
             text-decoration: none;
@@ -130,14 +137,15 @@
             font-size: 1.2rem;
             letter-spacing: 1px;
             transition: all 0.3s ease;
-            box-shadow: 0 0 20px rgba(255,255,255,0.5);
+            box-shadow: 0 0 20px rgba(0, 255, 169, 0.3);
             cursor: pointer;
+            border: 1px solid #00ffa9;
         }
         
         .cta-button:hover {
-            background-color: rgba(255,255,255,0.8);
+            background-color: rgba(0, 255, 169, 0.2);
             transform: translateY(-3px);
-            box-shadow: 0 0 30px rgba(255,255,255,0.8);
+            box-shadow: 0 0 30px rgba(0, 255, 169, 0.8);
         }
         
         .section {
@@ -160,7 +168,7 @@
         }
         
         .section-content {
-            background-color: rgba(0,0,0,0.7);
+            background-color: rgba(10, 11, 26, 0.8);
             padding: 2rem;
             border-radius: 10px;
             backdrop-filter: blur(10px);
@@ -168,13 +176,16 @@
             width: 100%;
             max-height: 80vh;
             overflow-y: auto;
+            border: 1px solid rgba(0, 255, 169, 0.3);
+            box-shadow: 0 0 20px rgba(0, 255, 169, 0.2), 0 0 40px rgba(255, 0, 130, 0.1);
         }
         
         .section-title {
             font-size: 2rem;
             margin-bottom: 1.5rem;
-            color: #fff;
+            color: #00ffa9;
             text-align: center;
+            text-shadow: 0 0 10px rgba(0, 255, 169, 0.7);
         }
         
         .grid {
@@ -185,25 +196,29 @@
         }
         
         .project-card {
-            background-color: rgba(255,255,255,0.1);
+            background-color: rgba(16, 17, 36, 0.7);
             border-radius: 8px;
             overflow: hidden;
             transition: all 0.3s ease;
             cursor: pointer;
+            border: 1px solid rgba(255, 0, 130, 0.3);
         }
         
         .project-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 0 20px rgba(255,255,255,0.2);
+            box-shadow: 0 0 20px rgba(255, 0, 130, 0.4);
+            border: 1px solid rgba(255, 0, 130, 0.6);
         }
         
         .project-img {
             width: 100%;
             height: 150px;
-            background-color: #333;
+            background-color: #191a36;
             display: flex;
             justify-content: center;
             align-items: center;
+            color: #ff0082;
+            text-shadow: 0 0 5px rgba(255, 0, 130, 0.7);
         }
         
         .project-info {
@@ -213,11 +228,12 @@
         .project-title {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
+            color: #00ffa9;
         }
         
         .project-desc {
             font-size: 0.9rem;
-            color: #ccc;
+            color: #a3a3da;
         }
         
         .skills-list {
@@ -228,10 +244,13 @@
         }
         
         .skill-tag {
-            background-color: rgba(255,255,255,0.1);
+            background-color: rgba(255, 0, 130, 0.1);
             padding: 0.5rem 1rem;
             border-radius: 30px;
             font-size: 0.8rem;
+            border: 1px solid rgba(255, 0, 130, 0.3);
+            color: #ff0082;
+            text-shadow: 0 0 5px rgba(255, 0, 130, 0.5);
         }
         
         .contact-form {
@@ -249,23 +268,23 @@
         
         label {
             font-size: 0.9rem;
-            color: #ccc;
+            color: #a3a3da;
         }
         
         input, textarea {
             padding: 0.8rem;
             border-radius: 4px;
-            border: 1px solid rgba(255,255,255,0.2);
-            background-color: rgba(255,255,255,0.05);
-            color: #fff;
+            border: 1px solid rgba(0, 255, 169, 0.3);
+            background-color: rgba(16, 17, 36, 0.8);
+            color: #f0f0ff;
             font-size: 1rem;
             transition: all 0.3s ease;
         }
         
         input:focus, textarea:focus {
             outline: none;
-            border-color: rgba(255,255,255,0.5);
-            box-shadow: 0 0 10px rgba(255,255,255,0.2);
+            border-color: rgba(0, 255, 169, 0.7);
+            box-shadow: 0 0 10px rgba(0, 255, 169, 0.4);
         }
         
         textarea {
@@ -274,20 +293,22 @@
         }
         
         .submit-button {
-            background-color: #fff;
-            color: #000;
+            background-color: rgba(0, 255, 169, 0.1);
+            color: #00ffa9;
             padding: 0.8rem;
             border-radius: 4px;
-            border: none;
+            border: 1px solid #00ffa9;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
             margin-top: 1rem;
             font-size: 1rem;
+            text-shadow: 0 0 5px rgba(0, 255, 169, 0.5);
         }
         
         .submit-button:hover {
-            background-color: rgba(255,255,255,0.8);
+            background-color: rgba(0, 255, 169, 0.2);
+            box-shadow: 0 0 15px rgba(0, 255, 169, 0.5);
         }
         
         .close-button {
@@ -296,14 +317,16 @@
             right: 1rem;
             background: none;
             border: none;
-            color: #fff;
+            color: #ff0082;
             font-size: 1.5rem;
             cursor: pointer;
             transition: all 0.3s ease;
+            text-shadow: 0 0 5px rgba(255, 0, 130, 0.7);
         }
         
         .close-button:hover {
-            color: rgba(255,255,255,0.7);
+            color: rgba(255, 0, 130, 0.7);
+            transform: scale(1.1);
         }
         
         @media (max-width: 768px) {
@@ -331,7 +354,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: #000;
+            background-color: #0a0b1a;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -347,16 +370,35 @@
         .spinner {
             width: 50px;
             height: 50px;
-            border: 5px solid rgba(255,255,255,0.3);
+            border: 5px solid rgba(0, 255, 169, 0.1);
             border-radius: 50%;
-            border-top-color: #fff;
+            border-top-color: #00ffa9;
             animation: spin 1s ease-in-out infinite;
+            box-shadow: 0 0 20px rgba(0, 255, 169, 0.5);
         }
         
         @keyframes spin {
             to {
                 transform: rotate(360deg);
             }
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: rgba(16, 17, 36, 0.5);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #00ffa9;
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ff0082;
         }
     </style>
 </head>
@@ -368,7 +410,7 @@
     <div class="overlay"></div>
     
     <div class="navigation">
-        <div class="logo">PORTFOLIO</div>
+        <div class="logo">E-PORTFOLIO</div>
         <div class="nav-links">
             <a class="nav-link" data-section="home">Home</a>
             <a class="nav-link" data-section="about">About</a>
@@ -381,9 +423,9 @@
     <div class="content">
         <div id="home" class="section active">
             <div class="main-content active">
-                <h1>Welcome</h1>
-                <p class="tagline">Graduating Student</p>
-                <a class="cta-button" data-section="projects">View My Work</a>
+                <h1>Welcome to my World</h1>
+                <p class="tagline">Graduating Student's Small Introduction</p>
+                <a class="cta-button" data-section="projects">View My Works</a>
             </div>
         </div>
         
@@ -391,11 +433,11 @@
             <div class="section-content">
                 <button class="close-button">&times;</button>
                 <h2 class="section-title">About Me</h2>
-                <p>Hello! I'm John, a creative developer with a passion for building immersive digital experiences. With over 5 years of experience in web development and design, I specialize in creating engaging, interactive websites and applications.</p>
+                <p>Hello! I'm Kenji, an aspiring IT graduate who makes side projects here and there while learning all things about tech; old and new.</p>
                 <br>
-                <p>My journey began with a degree in Computer Science, but my curiosity led me to explore the intersection of technology and design. I love bringing ideas to life through code and believe that great design should be both beautiful and functional.</p>
+                <p>My journey began when I enrolled for BSIT and it went from there. It wasn't my first choice but I've grown to love it!</p>
                 <br>
-                <p>When I'm not coding, you can find me hiking in the mountains, experimenting with photography, or learning new technologies to expand my skill set.</p>
+                <p>When I'm not coding, I'm usually learning about more stuff or just playing games.</p>
             </div>
         </div>
         
@@ -407,43 +449,17 @@
                     <div class="project-card">
                         <div class="project-img">Project 1</div>
                         <div class="project-info">
-                            <h3 class="project-title">E-Commerce Platform</h3>
-                            <p class="project-desc">A fully responsive e-commerce website with product filtering and cart functionality.</p>
+                            <h3 class="project-title">FinLitApp</h3>
+                            <p class="project-desc">A mobile application for monitoring and tracking budgets</p>
                         </div>
                     </div>
                     <div class="project-card">
                         <div class="project-img">Project 2</div>
                         <div class="project-info">
-                            <h3 class="project-title">3D Product Viewer</h3>
-                            <p class="project-desc">Interactive 3D product visualization tool built with Three.js.</p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-img">Project 3</div>
-                        <div class="project-info">
                             <h3 class="project-title">Portfolio Site</h3>
                             <p class="project-desc">Personal portfolio website showcasing my work and skills.</p>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-img">Project 4</div>
-                        <div class="project-info">
-                            <h3 class="project-title">Social Media Dashboard</h3>
-                            <p class="project-desc">Analytics dashboard for social media management.</p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-img">Project 5</div>
-                        <div class="project-info">
-                            <h3 class="project-title">Weather App</h3>
-                            <p class="project-desc">Real-time weather application with location-based forecasts.</p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-img">Project 6</div>
-                        <div class="project-info">
-                            <h3 class="project-title">Task Management Tool</h3>
-                            <p class="project-desc">Collaborative task management application with drag-and-drop functionality.</p>
                         </div>
                     </div>
                 </div>
@@ -462,16 +478,11 @@
                     <span class="skill-tag">React</span>
                     <span class="skill-tag">Three.js</span>
                     <span class="skill-tag">Node.js</span>
-                    <span class="skill-tag">WebGL</span>
-                    <span class="skill-tag">GSAP</span>
                     <span class="skill-tag">Responsive Design</span>
                     <span class="skill-tag">UI/UX Design</span>
                     <span class="skill-tag">Figma</span>
                     <span class="skill-tag">Adobe Creative Suite</span>
                     <span class="skill-tag">Git</span>
-                    <span class="skill-tag">REST APIs</span>
-                    <span class="skill-tag">MongoDB</span>
-                    <span class="skill-tag">Express</span>
                 </div>
             </div>
         </div>
@@ -521,7 +532,7 @@
             // Create renderer
             renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
             renderer.setSize(window.innerWidth, window.innerHeight);
-            renderer.setClearColor(0x000000, 0);
+            renderer.setClearColor(0x0a0b1a, 0);
             document.body.appendChild(renderer.domElement);
             
             // Create particles
@@ -567,9 +578,18 @@
             const geometry = new THREE.BufferGeometry();
             const vertices = [];
             const sizes = [];
+            const colors = [];
             
             const particleCount = 1000;
             const radius = 100;
+            
+            // Add colors for cyberpunk effect
+            const colorPalette = [
+                new THREE.Color(0x00ffa9), // Neon teal
+                new THREE.Color(0xff0082), // Neon pink
+                new THREE.Color(0x00f3ff), // Neon cyan
+                new THREE.Color(0xbd00ff)  // Neon purple
+            ];
             
             for (let i = 0; i < particleCount; i++) {
                 const phi = Math.acos(-1 + (2 * i) / particleCount);
@@ -581,18 +601,24 @@
                 
                 vertices.push(x, y, z);
                 
-                sizes.push(2);
+                // Random size for particles
+                sizes.push(Math.random() * 2 + 1);
+                
+                // Add color from palette
+                const color = colorPalette[Math.floor(Math.random() * colorPalette.length)];
+                colors.push(color.r, color.g, color.b);
             }
             
             geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
             geometry.setAttribute('size', new THREE.Float32BufferAttribute(sizes, 1));
+            geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
             
             const material = new THREE.PointsMaterial({
-                color: 0xffffff,
-                size: 0.1,
+                size: 0.2,
                 transparent: true,
                 sizeAttenuation: true,
-                opacity: 0.8
+                opacity: 0.8,
+                vertexColors: true
             });
             
             particles = new THREE.Points(geometry, material);
