@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenji E-Portfolio</title>
+    <link rel="icon" href="https://i.ibb.co/N2vyT7yh/portfolio.png" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
     <style>
@@ -222,8 +223,9 @@
         }
 
         .project-img img {
-            max-width: 100%;
-            height: auto;
+            max-width: 80%; /* Reduce the width to 80% of the container */
+            max-height: 120px; /* Set a maximum height */
+            height: auto; /* Maintain aspect ratio */
             display: block;
             margin: 0 auto;
         }
@@ -432,8 +434,8 @@
     <div class="content">
         <div id="home" class="section active">
             <div class="main-content active">
-                <h1>Welcome to my World</h1>
-                <p class="tagline">Graduating Student's Small Introduction</p>
+                <h1>Welcome</h1>
+                <p class="tagline">A Graduating Student's Small Introduction</p>
                 <a class="cta-button" data-section="projects">View My Works</a>
             </div>
         </div>
@@ -456,14 +458,14 @@
                 <h2 class="section-title">My Projects</h2>
                 <div class="grid">
                     <div class="project-card">
-                        <div class="project-img"><a href="https://imgbb.com/"><img src="https://i.ibb.co/mrNY4vYV/app-launcher-icon.jpg" alt="app-launcher-icon" border="0"></a></div>
+                        <div class="project-img"><a href=""><img src="https://i.ibb.co/mrNY4vYV/app-launcher-icon.jpg" alt="app-launcher-icon" border="0"></a></div>
                         <div class="project-info">
                             <h3 class="project-title">FinLitApp</h3>
                             <p class="project-desc">A mobile application for monitoring and tracking budgets</p>
                         </div>
                     </div>
                     <div class="project-card">
-                        <div class="project-img">Project 2</div>
+                        <div class="project-img"><a href=""><img src="https://i.ibb.co/N2vyT7yh/portfolio.png" alt="portfolio" border="0"></a></div>
                         <div class="project-info">
                             <h3 class="project-title">Portfolio Site</h3>
                             <p class="project-desc">Personal portfolio website showcasing my work and skills.</p>
