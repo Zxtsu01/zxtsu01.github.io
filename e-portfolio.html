@@ -181,6 +181,18 @@
             box-shadow: 0 0 20px rgba(0, 255, 169, 0.2), 0 0 40px rgba(255, 0, 130, 0.1);
         }
         
+        #about .section-content {
+            max-height: 70vh; /* Set a maximum height for the content */
+            overflow-y: auto; /* Enable vertical scrolling */
+            padding-right: 1rem; /* Add padding for better readability */
+        }
+
+        #timesheets .section-content {
+            max-height: 70vh; /* Set a maximum height for the section */
+            overflow-y: auto; /* Enable vertical scrolling */
+            padding-right: 1rem; /* Add padding for better readability */
+        }
+        
         .section-title {
             font-size: 2rem;
             margin-bottom: 1.5rem;
@@ -409,6 +421,68 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #ff0082;
         }
+
+        .timesheet-images-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            text-align: left;
+            color: #f0f0ff;
+        }
+
+        .timesheet-images-table th, .timesheet-images-table td {
+            padding: 1rem;
+            border: 1px solid rgba(0, 255, 169, 0.3);
+        }
+
+        .timesheet-images-table th {
+            background-color: rgba(0, 255, 169, 0.1);
+            color: #00ffa9;
+            text-shadow: 0 0 5px rgba(0, 255, 169, 0.5);
+        }
+
+        .timesheet-images-table td {
+            text-align: center;
+        }
+
+        .timesheet-images-table img.timesheet-img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .timesheet-images-table img.timesheet-img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(0, 255, 169, 0.5);
+        }
+
+        .accomplishment-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .accomplishment-list li {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background-color: rgba(16, 17, 36, 0.7);
+            border-radius: 8px;
+            border: 1px solid rgba(0, 255, 169, 0.3);
+            box-shadow: 0 0 10px rgba(0, 255, 169, 0.2);
+        }
+
+        .accomplishment-list h3 {
+            margin-bottom: 0.5rem;
+            color: #00ffa9;
+            text-shadow: 0 0 5px rgba(0, 255, 169, 0.5);
+        }
+
+        .accomplishment-list p {
+            color: #a3a3da;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
@@ -423,10 +497,11 @@
         <div class="nav-links">
             <a class="nav-link" data-section="home">Home</a>
             <a class="nav-link" data-section="about">About</a>
+            <a class="nav-link" data-section="company">Company</a>
+            <a class="nav-link" data-section="timesheets">Timesheets</a>
+            <a class="nav-link" data-section="accomplishments">Accomplishments</a>
             <a class="nav-link" data-section="projects">Projects</a>
-            <a class="nav-link" data-section="skills">Skills</a>
             <a class="nav-link" data-section="gallery">Gallery</a>
-            <a class="nav-link" data-section="blog">Blog</a>
             <a class="nav-link" data-section="contact">Contact</a>
         </div>
     </div>
@@ -443,12 +518,25 @@
         <div id="about" class="section">
             <div class="section-content">
                 <button class="close-button">&times;</button>
-                <h2 class="section-title">About Me</h2>
-                <p>Hello! I'm Kenji, an aspiring IT graduate who makes side projects here and there while learning all things about tech; old and new.</p>
+                <h2 class="section-title">About</h2>
+                <h3 class="blog-title">PHILOSOPHY IN LIFE</h3>
+                <p>Life itself is the essence of mind and matter as per René Descartes. "Cogito, ergo sum”, “I think, therefore I am”, this simple philosophy has deep meanings that really spoke to me on a fundamental level. The dualism of existence, mind and matter how we all came to be. The mind can exist without the body but the body would fall short lest there is mind. The metaphysics that encompasses this idea has made me rethink what it is to live. To us, thinking is a natural occurrence, like breathing, blinking, and all those autonomous systems within our body. But to be able to think means that we are in this world. Whenever I doubt myself, I sit and think. I always come to the conclusion that because I can have cognitive function, therefore I can exist in this world. Meaning, whenever I face tough challenges that puts me on my backfoot, I stop and think. This erases all my doubts and fears, which propels me to formulate what I can do in order to solve my problems. I use this philosophy during this rigorous training. Stepping back and seeing the big picture, looking at the details I missed and carefully concocting a thought. Being in this state allows me to believe in myself and that is the grounded truth in the simple thought of “I think, therefore I am”.</p>
                 <br>
-                <p>My journey began when I enrolled for BSIT and it went from there. It wasn't my first choice but I've grown to love it!</p>
+                <h3 class="blog-title">CAREER PLAN</h3>
+                <p>Adulthood was something I had a hard time grasping during my childhood. I never really had any plans or dreams like the other kids who was my age did. I’ve lived life one day, one hour, one second at a time. But alas, time was but a fleeting concept that which binds us to this temporal line that only goes forward. And with that, I realized that I had to at least come up with a plan for my future. As I graduate from OMSC, I had realized a version of myself. One that which has an idea on what to pursue as my career. Applying to all available jobs that are within my skillset while also honing my talents and skills further. This plan is not really concrete since the future is dynamic and a lot of things can happen so I treat this idea as my guideline. If possible, I want to use my knowledge to help people while also making money. I would also like to experience the whole world and what it can offer. I know myself as one who doesn’t turn down an opportunity to try new things and I intend to keep it that way for my career as well. As I wrap up my thoughts, the opportunity that this program has given me expanded the opportunities I can take in the future. BSIT is what I can think as one of the flexible programs as it deals with technology. I think that I’ve learned enough to say that I can pursue any field that I can think of as long as I can use the knowledge, I’ve accumulated from all the years of my education. A true master is forever a student, to continue learning even while pursuing a career is my plan.</p>
                 <br>
-                <p>When I'm not coding, I'm usually learning about more stuff or just playing games.</p>
+                <h3 class="blog-title">A. IMPORTANCE OF INTERNSHIP</h3>
+                <p>The importance of internship is to have the opportunity to experience what its like to be in a working environment. To build a habit and proper work ethics. Internship is like a interactive window to the real working environment that gives us limited access to feel what its like to work. The most important thing is to prepare us as we go on to step outside our comfort zone.</p>
+                <br>
+                <h3 class="blog-title">B. OBJECTIVES OF INTERNSHIP</h3>
+                <p>The objectives of an internship are to help develop the important skills of the intern by providing practical experiences in controlled or some less than controlled environment or conditions. The interns will naturally develop into a semi-professional, qualified to take on tasks that are at their level or sometimes even higher. It also develops their ability to communicate with adults during working hours.</p>
+                <br>
+                <h3 class="blog-title">C. TIME AND PLACE OF THE INTERNSHIPS</h3>
+                <p>Time of Practicum: Monday to Friday 8:30 am to 12:00 pm and 1:00 pm to 5:30 pm</p>
+                <p>Date of Practicum: January 20, 2025 to April 24, 2025.</p>
+                <p>Working Place/Agency:</p>       
+                <p>Unit VI-A GMA Loubel Plaza, 7514 Bagtikan St. Corner Chino Roces Ave, San Antonio, Makati City</p>
+                <p>Online Mode of OJT using Slack, Google Meet and Google Chat.</p> 
             </div>
         </div>
         
@@ -501,46 +589,199 @@
         <div id="gallery" class="section">
             <div class="section-content">
                 <button class="close-button">&times;</button>
-                <h2 class="section-title">Photo Gallery</h2>
-                <p>A collection of my photography and design work.</p>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <div class="gallery-img">
-                            <div class="placeholder-img">Cyberpunk City</div>
-                        </div>
-                        <div class="gallery-caption">Neon cityscape at night</div>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="gallery-img">
-                            <div class="placeholder-img">Digital Art</div>
-                        </div>
-                        <div class="gallery-caption">Abstract digital composition</div>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="gallery-img">
-                            <div class="placeholder-img">UI Design</div>
-                        </div>
-                        <div class="gallery-caption">Futuristic interface concept</div>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="gallery-img">
-                            <div class="placeholder-img">3D Render</div>
-                        </div>
-                        <div class="gallery-caption">Holographic projection model</div>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="gallery-img">
-                            <div class="placeholder-img">Tech Portrait</div>
-                        </div>
-                        <div class="gallery-caption">Augmented reality self-portrait</div>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="gallery-img">
-                            <div class="placeholder-img">Data Visualization</div>
-                        </div>
-                        <div class="gallery-caption">Interactive data structure visualization</div>
-                    </div>
-                </div>
+                <h2 class="section-title">Gallery</h2>
+                <h3 class="blog-title">Appendices</h3>
+                <p>Below is a collection of required images for the portfolio:</p>
+                <table class="timesheet-images-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Image</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Appendix A:
+                                Evaluation Form (Registrar’s Office)
+                                </td>
+                            <td>
+                                <a href="https://i.ibb.co/4RkkxbsR/Times1.png" target="_blank">
+                                    <img class="timesheet-img" src="https://i.ibb.co/4RkkxbsR/Times1.png" alt="Timesheet Image">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Appendix B:
+                                Photocopy Registration Form
+                                </td>
+                            <td>
+                                <a href="https://i.ibb.co/twFXBV5m/Times2.png" target="_blank">
+                                    <img class="timesheet-img" src="https://i.ibb.co/twFXBV5m/Times2.png" alt="Timesheet Image">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Appendix C:
+                                Photocopy Validated ID
+                                </td>
+                            <td>
+                                <a href="https://i.ibb.co/C34kC97B/ID1a2.png" target="_blank">
+                                    <img class="timesheet-img" src="https://i.ibb.co/C34kC97B/ID1a2.png" alt="Timesheet Image">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Appendix D:
+                                Parent’s Consent
+                                </td>
+                            <td>
+                                <a href="https://i.ibb.co/ks6sRhYd/ParCon.jpg" target="_blank">
+                                    <img class="timesheet-img" src="https://i.ibb.co/ks6sRhYd/ParCon.jpg " alt="Timesheet Image">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Appendix E:
+                                Medical Certificate                                
+                                </td>
+                            <td>
+                                <a href="https://i.ibb.co/0vdwQWD/Med-Record.jpg" target="_blank">
+                                    <img class="timesheet-img" src="https://i.ibb.co/0vdwQWD/Med-Record.jpg" alt="Timesheet Image">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Appendix F
+                                Certificate of Good Moral Character                                
+                                </td>
+                            <td>
+                                <a href="" target="_blank">
+                                    <img class="timesheet-img" src="" alt="Certificate of Good Moral Character">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Appendix G:
+                                Application Letter                                
+                                </td>
+                            <td>
+                                <a href="https://i.ibb.co/ks6sRhYd/ParCon.jpg" target="_blank">
+                                    <img class="timesheet-img" src="https://i.ibb.co/ks6sRhYd/ParCon.jpg " alt="Timesheet Image">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Appendix H:
+                                Endorsement Letter                                
+                                </td>
+                            <td>
+                                <a href="https://i.ibb.co/ks6sRhYd/ParCon.jpg" target="_blank">
+                                    <img class="timesheet-img" src="https://i.ibb.co/ks6sRhYd/ParCon.jpg " alt="Timesheet Image">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Appendix I:
+                                Memorandum of Agreement                                
+                                </td>
+                            <td>
+                                <a href="https://i.ibb.co/ks6sRhYd/ParCon.jpg" target="_blank">
+                                    <img class="timesheet-img" src="https://i.ibb.co/ks6sRhYd/ParCon.jpg " alt="Timesheet Image">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Appendix J:
+                                Daily Time Record (Timecard)                                
+                                </td>
+                            <td>
+                                <a href="https://i.ibb.co/ks6sRhYd/ParCon.jpg" target="_blank">
+                                    <img class="timesheet-img" src="https://i.ibb.co/ks6sRhYd/ParCon.jpg " alt="Timesheet Image">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Appendix K:
+                                Certificate of Completion (Placement Agency/Office)                                
+                                </td>
+                            <td>
+                                <a href="https://i.ibb.co/ks6sRhYd/ParCon.jpg" target="_blank">
+                                    <img class="timesheet-img" src="https://i.ibb.co/ks6sRhYd/ParCon.jpg " alt="Timesheet Image">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Appendix L:
+                                Certificate of Clearance (Placement Agency/Office)                                
+                                </td>
+                            <td>
+                                <a href="https://i.ibb.co/ks6sRhYd/ParCon.jpg" target="_blank">
+                                    <img class="timesheet-img" src="https://i.ibb.co/ks6sRhYd/ParCon.jpg " alt="Timesheet Image">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Appendix M:
+                                Performance/Proficiency Rating Sheet (Placement Agency/Office)                                
+                                </td>
+                            <td>
+                                <a href="https://i.ibb.co/ks6sRhYd/ParCon.jpg" target="_blank">
+                                    <img class="timesheet-img" src="https://i.ibb.co/ks6sRhYd/ParCon.jpg " alt="Timesheet Image">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Appendix N:
+                                Pictures during the Pre-service Seminar                                
+                                </td>
+                            <td>
+                                <a href="https://i.ibb.co/ks6sRhYd/ParCon.jpg" target="_blank">
+                                    <img class="timesheet-img" src="https://i.ibb.co/ks6sRhYd/ParCon.jpg " alt="Timesheet Image">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Appendix O:
+                                Pictures during Office works                                
+                                </td>
+                            <td>
+                                <a href="https://i.ibb.co/ks6sRhYd/ParCon.jpg" target="_blank">
+                                    <img class="timesheet-img" src="https://i.ibb.co/ks6sRhYd/ParCon.jpg " alt="Timesheet Image">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Appendix P:
+                                Code of Ethics for CAST Student Internship                                
+                                </td>
+                            <td>
+                                <a href="https://i.ibb.co/ks6sRhYd/ParCon.jpg" target="_blank">
+                                    <img class="timesheet-img" src="https://i.ibb.co/ks6sRhYd/ParCon.jpg " alt="Timesheet Image">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Appendix Q:      
+                                Curriculum Vitae                                
+                                </td>
+                            <td>
+                                <a href="https://i.ibb.co/ks6sRhYd/ParCon.jpg" target="_blank">
+                                    <img class="timesheet-img" src="https://i.ibb.co/ks6sRhYd/ParCon.jpg " alt="Timesheet Image">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Appendix R:
+                                On-the-Job Training Portfolio Evaluation Form                                
+                                </td>
+                            <td>
+                                <a href="https://i.ibb.co/ks6sRhYd/ParCon.jpg" target="_blank">
+                                    <img class="timesheet-img" src="https://i.ibb.co/ks6sRhYd/ParCon.jpg " alt="Timesheet Image">
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
         
@@ -601,6 +842,107 @@
                     </div>
                     <button type="submit" class="submit-button">Send Message</button>
                 </form>
+            </div>
+        </div>
+
+        <div id="company" class="section">
+            <div class="section-content">
+                <button class="close-button">&times;</button>
+                <h2 class="section-title">Company</h2>
+                <h3 class="blog-title">NATURE OF THE AGENCY</h3>
+                <p>DevOps Outsourcing Inc. is a company that provides help to businesses to implement and manage DevOps practices through external expertise.</p>
+                <br>
+                <p>DevOps Outsourcing Specializes in Business Process Outsourcing. Helping clients or companies to leverage technology in order to make their workloads faster and more reliable. It also helps them to easily integrate with other software in the future using their API service. It also makes the processes portable by having its own dedicated mobile application available to both android and IOS. It also helps in monitoring the progress of certain variables that may be crucial to the success of the business.</p>
+                <br>
+                <br>
+                <h3 class="blog-title">Vision</h3>
+                <p>Our vision at DevOps Outsourcing Inc. is to be recognized as a leading provider of business process consulting and custom IT solutions, known for our commitment to excellence and customer satisfaction. We envision a future where businesses of all sizes and industries can harness the power of technology to streamline their operations, maximize efficiency, and unlock their full potential. By continuously embracing innovation and staying at the forefront of industry trends, we aim to be the preferred partner for organizations seeking transformative solutions.</p>
+                <br>
+                <h3 class="blog-title">Mission</h3>
+                <p>At DevOps Outsourcing Inc, our mission is to empower businesses by providing comprehensive business process consulting and designing tailor-made IT solutions. We strive to be trusted partners, leveraging our expertise and innovative approach to help organizations optimize their operations, drive growth, and achieve their strategic objectives. Through our personalized services, we aim to make a positive and lasting impact on our clients' success. </p>
+                <br>
+                <h3 class="blog-title">HISTORY/BACKGROUND OF THE AGENCY</h3>
+                <p>DevOps Outsourcing Inc is an innovative startup company specializing in business process consulting and the design and development of tailormade IT solutions. Established recently, the company is driven by a passion for helping businesses optimize their operations and achieve their goals through technology-driven solutions. Located in Makati City, Philippines, DevOps Outsourcing Inc focuses on delivering personalized services to its clients. Their primary expertise lies in business process consulting, where they collaborate closely with companies to identify areas of improvement, streamline processes, and enhance overall efficiency. By leveraging their in-depth industry knowledge and experience, they provide strategic guidance to help organizations overcome operational challenges and achieve sustainable growth. In addition to their consulting services, DevOps Outsourcing Inc excels in designing and developing custom IT solutions. They 
+                    specialize in creating web and mobile applications from scratch, tailoring each solution to meet the unique requirements of their clients. With a team of skilled developers and designers, they combine cutting-edge technologies with a deep understanding of client objectives to deliver high-quality and intuitive software applications. DevOps Outsourcing Inc prides itself on its customer-centric approach. They prioritize understanding their clients' specific needs, goals, and challenges before crafting solutions that address those pain points effectively. By fostering close partnerships and clear communication, they ensure that the final deliverables align with clients' expectations and contribute to their long-term success. As a startup company, DevOps Outsourcing Inc aims to make a mark in the industry by providing top-notch services and driving innovation. Their agility and flexibility allow them to adapt quickly to emerging technologies and industry trends, enabling them to stay at the forefront of the ever-evolving IT landscape. DevOps Outsourcing Inc primarily serves small to medium-sized businesses across various sectors. Their location in Makati City provides them with access to a vibrant business ecosystem and a talented pool of professionals, fostering collaboration and growth. Moving forward, DevOps Outsourcing Inc is dedicated to expanding its service offerings, exploring new opportunities, and forging strong partnerships with clients. By delivering business process consulting and designing tailor-made IT solutions, the company aims to empower businesses to thrive in a digital-first world.
+                     </p>
+                     <br>
+                     <br>
+                <h3 class="blog-title">ORGANIZATION CHART</h3>
+                <a href="https://ibb.co/vCrYQzhy"><img src="https://i.ibb.co/wZbsw67G/Org-Chart.png" alt="Org-Chart" border="0"></a>
+            </div>
+        </div>
+
+        <div id="timesheets" class="section">
+            <div class="section-content">
+                <button class="close-button">&times;</button>
+                <h2 class="section-title">Timesheets</h2>
+                <h3 class="blog-title">Work Hours and Activities</h3>
+                <p>Below is a collection of timesheet images during the internship. Click on an image to view it in full size:</p>
+                <table class="timesheet-images-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Image</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>April 25 - March 31</td>
+                            <td>
+                                <a href="https://i.ibb.co/4RkkxbsR/Times1.png" target="_blank">
+                                    <img class="timesheet-img" src="https://i.ibb.co/4RkkxbsR/Times1.png" alt="Timesheet Image">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>March 31 - March 05</td>
+                            <td>
+                                <a href="https://i.ibb.co/twFXBV5m/Times2.png" target="_blank">
+                                    <img class="timesheet-img" src="https://i.ibb.co/twFXBV5m/Times2.png" alt="Timesheet Image">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>March 04 - February 06</td>
+                            <td>
+                                <a href="https://i.ibb.co/W48LQbNh/Times3.png" target="_blank">
+                                    <img class="timesheet-img" src="https://i.ibb.co/W48LQbNh/Times3.png" alt="Timesheet Image">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>February 05 - January 20</td>
+                            <td>
+                                <a href="https://i.ibb.co/5gXKffwZ/Times4.png" target="_blank">
+                                    <img class="timesheet-img" src="https://i.ibb.co/5gXKffwZ/Times4.png" alt="Timesheet Image">
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="accomplishments" class="section">
+            <div class="section-content">
+                <button class="close-button">&times;</button>
+                <h2 class="section-title">Accomplishment Reports</h2>
+                <p>Below are the accomplishment reports and milestones achieved during the internship:</p>
+                <ul class="accomplishment-list">
+                    <li>
+                        <h3>Summary:</h3>
+                        <p><a href="https://ibb.co/JwkWtPSK"><img src="https://i.ibb.co/9kYmgjdN/ProgRep.png" alt="ProgRep" border="0"></a></p>
+                    </li>
+                    <!-- Add more accomplishments as needed -->
+                </ul>
+                <p>Below are the Internship Analysis Reports:</p>
+                <ul class="accomplishment-list">
+                    <li>
+                        <h3>Summary:</h3>
+                        <p><a href="https://ibb.co/35X2rhH2"><img src="https://i.ibb.co/TDX6vh56/IntRep.png" alt="IntRep" border="0"></a></p>
+                    </li>
+                    <!-- Add more accomplishments as needed -->
+                </ul>
             </div>
         </div>
     </div>
